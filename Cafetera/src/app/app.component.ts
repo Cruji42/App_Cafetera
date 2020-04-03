@@ -15,12 +15,12 @@ export class AppComponent implements OnInit {
     {
       title: 'Control',
       url: '/control',
-      icon: 'mail'
+      icon: 'game-controller'
     },
     {
       title: 'Historial',
       url: '/historial',
-      icon: 'paper-plane'
+      icon: 'calendar'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
