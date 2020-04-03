@@ -13,11 +13,10 @@
 <div *ngFor="let y of eventos">
     <ion-item>
       <ion-avatar slot="start">
-        <img src="">
+        <img src="./assets/{{y.estado}}.svg">
       </ion-avatar>
       <ion-label>
         <h2>Evento</h2>
-        <h3>{{y.estado}}</h3>
         <p>{{y.fecha}}</p>
       </ion-label>
     </ion-item>
