@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Historial
+      <ion-icon name="home-outline" style="position: absolute; right: 10%" (click)="goHome()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Eventos
+    </ion-list-header>
+<div *ngFor="let y of eventos">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="">
+      </ion-avatar>
+      <ion-label>
+        <h2>Evento</h2>
+        <h3>{{y.estado}}</h3>
+        <p>{{y.fecha}}</p>
+      </ion-label>
+    </ion-item>
+</div>
+    </ion-list>
+</ion-content>

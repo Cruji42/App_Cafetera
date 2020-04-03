@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Control
+      <ion-icon name="home-outline" style="position: absolute; right: 10%" (click)="goHome()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 style="position: absolute; left: 10%" *ngIf="prendido">Cafetera Encendida</h1>
+  <h1 style="position: absolute; left: 10%" *ngIf="apagado">Cafetera Apagada</h1>
+  <img src="https://i.gifer.com/WLA.gif" style="width: 50%;  border-radius: 50%; position: absolute; top: 15%; left: 25%">
+  <ion-button color="success" *ngIf="apagado" (click)="encender()" style="position: absolute; bottom: 20%; left: 40%">
+    ON
+  </ion-button>
+
+  <ion-button color="danger" *ngIf="prendido" (click)="apagar()" style="position: absolute; bottom: 20%; left: 40%">
+    OFF
+  </ion-button>
+
+</ion-content>
